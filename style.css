@@ -1,0 +1,346 @@
+/* ============================================================
+   VARIABLES — edit colors, fonts, and spacing here
+   ============================================================ */
+:root {
+  --color-bg:         #ffffff;
+  --color-text:       #333333;
+  --color-text-light: #666666;
+  --color-accent:     #3a7bd5;
+  --color-divider:    #dddddd;
+  --color-hover-bg:   #f5f8ff;
+
+  --font-mono:   'JetBrains Mono', 'Courier New', monospace;
+  --font-serif:  'Source Serif 4', Georgia, serif;
+
+  --max-width:   900px;
+  --gap:         2rem;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-serif);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  padding: 2rem 1.5rem 4rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+header {
+  max-width: var(--max-width);
+  margin: 0 auto 3rem;
+}
+
+.site-name {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+/* ============================================================
+   MAIN WRAPPER
+   ============================================================ */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ============================================================
+   HERO — photo + bio side by side
+   ============================================================ */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap);
+  margin-bottom: 2.5rem;
+}
+
+/* --- Photo --- */
+.hero-photo {
+  flex-shrink: 0;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  filter: grayscale(20%);
+}
+
+/* Fallback initials circle (shown when photo fails to load) */
+.photo-fallback {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #dce8f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  color: var(--color-accent);
+  z-index: -1; /* sits behind the real photo when it loads */
+}
+
+/* If the img fails, show fallback in front */
+.hero-photo img[data-error] + .photo-fallback {
+  z-index: 1;
+}
+
+/* --- Bio text --- */
+.hero-bio {
+  flex: 1;
+  padding-top: 0.25rem;
+}
+
+.hero-bio h1 {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-bio p {
+  font-size: 0.97rem;
+  color: var(--color-text);
+  margin-bottom: 0.6rem;
+}
+
+/* ============================================================
+   CV LINK
+   ============================================================ */
+.cv-link {
+  margin-bottom: 2rem;
+}
+
+.cv-link a {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-accent);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.15s;
+}
+.cv-link a:hover {
+  text-decoration: none;
+  border-bottom-color: var(--color-accent);
+}
+
+/* ============================================================
+   ACCORDION SECTIONS
+   ============================================================ */
+.sections {
+  border-top: 1px solid var(--color-divider);
+}
+
+.accordion {
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--color-text);
+  transition: color 0.15s;
+}
+
+.accordion-header:hover {
+  color: var(--color-accent);
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--color-text-light);
+  width: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  user-select: none;
+}
+
+/* Rotate + into × look when open (using CSS content swap) */
+.accordion.open .toggle-icon {
+  content: "−";
+  color: var(--color-accent);
+}
+
+.accordion-body {
+  padding: 0.5rem 0 1.75rem 2rem;
+}
+
+/* ============================================================
+   PAPER LIST
+   ============================================================ */
+.paper-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.paper-title {
+  font-weight: 400;
+  font-size: 0.97rem;
+  margin-bottom: 0.2rem;
+}
+
+.paper-title a {
+  color: var(--color-text);
+  font-style: italic;
+}
+.paper-title a:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.paper-meta {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.4rem;
+}
+
+/* Abstract toggle button */
+.abstract-toggle {
+  background: none;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.02em;
+}
+.abstract-toggle:hover { text-decoration: underline; }
+
+.abstract {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-hover-bg);
+  border-left: 3px solid var(--color-accent);
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.65;
+}
+
+/* ============================================================
+   RESEARCH INTERESTS
+   ============================================================ */
+.interests-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   TEACHING
+   ============================================================ */
+.accordion-body h3 {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 1.2rem 0 0.5rem;
+}
+.accordion-body h3:first-child { margin-top: 0; }
+
+.teaching-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.93rem;
+}
+
+/* ============================================================
+   CONTACT & BIO
+   ============================================================ */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--gap) * 1.5);
+}
+
+.contact-info p,
+.bio p {
+  font-size: 0.93rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  max-width: var(--max-width);
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* ============================================================
+   RESPONSIVE — single breakpoint at 620px
+   ============================================================ */
+@media (max-width: 620px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-bio h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accordion-body {
+    padding-left: 1rem;
+  }
+}
