@@ -18,7 +18,7 @@ const DATA = {
 
   // --- Hero bio (HTML string — links and bold are fine here) ---
   bio: [
-    `I'm a PhD Candidate in Economics at <a href="https://aysps.gsu.edu/economics/">Georgia State University.</a>,
+    `I'm a PhD Candidate in Economics at <a href="https://aysps.gsu.edu/economics/">Georgia State University.</a>
      My research sits at the intersection of <strong>health economics</strong>
      and <strong>labor economics</strong>, with a focus on maternal health and labor market outcomes.`,
     `I examine how policy changes shape individual outcomes across generations, with particular attention to the forces that drive and widen socioeconomic disparities.`,
@@ -57,7 +57,7 @@ const DATA = {
     {
       title: "Professional Recommendations and Provider Behavior",
       href:  "#",
-      meta:  `With <a href="#">Lauren Hoehn-Velasco</a> and <a href="#">Nancy A. Niemczyk</a>`,
+      meta:  `With Lauren Hoehn-Velasco and Nancy A. Niemczyk`,
       abstract:
         "We examine how physicians respond to new RCT evidence, using the publication of the ARRIVE trial " +
         "as a natural experiment. The trial found that elective induction at 39 weeks reduces cesarean delivery " +
@@ -71,7 +71,7 @@ const DATA = {
     {
       title: "The Long-term Impact of In-Utero Alcohol Taxes on Adult Prenatal Drinking",
       href:  "#",
-      meta:  `With <a href="#">Godwin Aipoh</a>`,
+      meta:  `With Godwin Aipoh`,
       abstract:
         "We investigate whether in-utero exposure to alcohol tax policies shapes adult prenatal drinking " +
         "and transmits health effects across generations. Using restricted birth certificate data with " +
@@ -84,12 +84,12 @@ const DATA = {
     {
       title: "Neonatal Mortality Risk in Planned Home Birth, 2015–2024",
       href:  "#",
-      meta:  `With <a href="#">Lauren Hoehn-Velasco</a> and <a href="#">Diana R. Jolles</a> &mdash; <em>Under Review</em>`,
+      meta:  `With Lauren Hoehn-Velasco and Diana R. Jolles &mdash; <em>Under Review</em>`,
     },
     {
       title: "Neonatal Mortality Risk in Freestanding Birth Centers, 2015–2024",
       href:  "#",
-      meta:  `With <a href="#">Lauren Hoehn-Velasco</a> and <a href="#">Diana R. Jolles</a> &mdash; <em>Under Review</em>`,
+      meta:  `With Lauren Hoehn-Velasco and Diana R. Jolles &mdash; <em>Under Review</em>`,
     },
   ],
 
@@ -101,11 +101,11 @@ const DATA = {
     { title: "Does Time Bridge Gaps? Long-Term Dynamics of the Child Penalty in Women's Earnings" },
     {
       title: "State-Paid Leave and Healthcare Utilization for Infants",
-      meta:  `With <a href="#">Godwin Aipoh</a>`,
+      meta:  `With Godwin Aipoh`,
     },
     {
       title: "Advertising and Consumer Behavior in the Post-Dobbs Era",
-      meta:  `With <a href="#">Sukriti Beniwal</a> and <a href="#">Nikita Dhingra</a>`,
+      meta:  `With Sukriti Beniwal and Nikita Dhingra`,
     },
   ],
 
@@ -144,10 +144,10 @@ const DATA = {
       "Atlanta, GA 30303",
     ],
     links: [
-      { label: "CV (PDF)",       href: "#" },
-      { label: "GitHub",         href: "#" },
+      { label: "CV (PDF)",       href: "assets/Raka_CV.pdf" },
+      { label: "GitHub",         href: "https://github.com/rakadatta/" },
       { label: "Google Scholar", href: "#" },
-      { label: "X / Twitter",    href: "https://x.com/" },
+      { label: "X / Twitter",    href: "https://x.com/datta_raka" },
     ],
     bio: [
       "Raka Datta is a PhD Candidate in Economics at the Andrew Young School of Policy Studies, " +

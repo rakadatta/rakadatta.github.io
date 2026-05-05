@@ -20,7 +20,7 @@ function renderHero(d) {
   const bioParagraphs = d.bio.map(p => `<p>${p}</p>`).join('\n      ');
   return `
     <div class="hero-photo">
-      <img src="assets/photo.jpg" alt="${esc(d.name)}" id="profile-photo" />
+      <img src="assets/profile.png" alt="${esc(d.name)}" id="profile-photo" />
       <div class="photo-fallback" aria-hidden="true">${esc(d.initials)}</div>
     </div>
     <div class="hero-bio">
