@@ -19,4 +19,4 @@ Raka's research sits at the intersection of health economics and labor economics
 
 ## Stack
 
-Static site — plain HTML, CSS, and vanilla JavaScript. All content is centralized in `data.js`.
+Static site — plain HTML, CSS, and vanilla JavaScript. All content is centralized in `data.js`. 
