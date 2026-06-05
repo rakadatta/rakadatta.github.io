@@ -18,6 +18,8 @@
   <meta property="og:description" content="PhD Candidate in Economics at Georgia State University. Research in health economics, labor economics, maternal health, and reproductive policy." />
   <meta property="og:url" content="https://rakadatta.github.io/" />
   <meta property="og:site_name" content="Raka Datta" />
+  <meta property="og:image" content="https://rakadatta.github.io/assets/profile.png" />
+  <meta property="og:image:alt" content="Raka Datta" />
   <meta property="profile:first_name" content="Raka" />
   <meta property="profile:last_name" content="Datta" />
 
@@ -27,6 +29,7 @@
   <meta name="twitter:creator" content="@datta_raka" />
   <meta name="twitter:title" content="Raka Datta | Economics PhD Candidate" />
   <meta name="twitter:description" content="PhD Candidate in Economics at Georgia State University. Research in health economics, labor economics, maternal health, and reproductive policy." />
+  <meta name="twitter:image" content="https://rakadatta.github.io/assets/profile.png" />
 
   <!-- JSON-LD structured data: Person (academic) -->
   <script type="application/ld+json">
@@ -37,6 +40,7 @@
     "givenName": "Raka",
     "familyName": "Datta",
     "url": "https://rakadatta.github.io/",
+    "image": "https://rakadatta.github.io/assets/profile.png",
     "email": "rdatta5@gsu.edu",
     "jobTitle": "PhD Candidate in Economics",
     "description": "PhD Candidate in Economics at the Andrew Young School of Policy Studies, Georgia State University. Research in health economics, labor economics, maternal health, reproductive policy, and alcohol and abortion policy using causal inference and applied microeconometrics.",
@@ -70,7 +74,9 @@
     ],
     "sameAs": [
       "https://github.com/rakadatta/",
-      "https://x.com/datta_raka"
+      "https://x.com/datta_raka",
+      "https://www.linkedin.com/in/rakadatta/",
+      "https://www.instagram.com/raka.datta/"
     ]
   }
   </script>
@@ -82,27 +88,165 @@
 </head>
 <body>
 
+  <!--
+    SEO: the containers below are pre-rendered with static HTML so crawlers
+    that don't execute JavaScript see the full content. script.js re-renders
+    the same markup from data.js on load. After editing data.js, regenerate
+    the static content with:  node prerender.js
+  -->
   <header>
-    <span class="site-name" id="site-name"></span>
+    <span class="site-name" id="site-name">Raka Datta</span>
   </header>
 
   <main>
-    <section class="hero" id="hero"></section>
-    <nav class="cv-link" id="cv-link"></nav>
-    <div class="sections" id="sections-container"></div>
+    <section class="hero" id="hero"><!-- prerender:hero -->
+    <div class="hero-photo">
+      <img src="assets/profile.png" alt="Raka Datta" id="profile-photo" />
+      <div class="photo-fallback" aria-hidden="true">RD</div>
+    </div>
+    <div class="hero-bio">
+      <h1>Hi, I'm Raka.</h1>
+      <p>I'm a PhD Candidate in Economics at <a href="https://aysps.gsu.edu/economics/">Georgia State University.</a>
+     My research sits at the intersection of <strong>health economics</strong>
+     and <strong>labor economics</strong>, with a focus on maternal health and labor market outcomes.</p>
+      <p>I examine how policy changes shape individual outcomes across generations, with particular attention to the forces that drive and widen socioeconomic disparities.</p>
+    </div><!-- /prerender:hero --></section>
+    <nav class="cv-link" id="cv-link"><!-- prerender:cv-link --><a href="assets/Raka_CV.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae ↗</a><!-- /prerender:cv-link --></nav>
+    <div class="sections" id="sections-container"><!-- prerender:sections -->
+  <div class="accordion" id="acc-working-papers">
+    <button class="accordion-header" onclick="toggleSection('working-papers')" aria-expanded="false">
+      <span class="toggle-icon">+</span>
+      <span>Working Papers</span>
+    </button>
+    <div class="accordion-body" id="working-papers" hidden>
+      <ul class="paper-list">
+      
+      <li class="paper">
+        <p class="paper-title">The Long-term Impact of In-Utero Restrictions to Abortion Access on Adult Labor Market Outcomes</p>
+        
+        <button class="abstract-toggle" onclick="toggleAbstract('abs-wp1')">Abstract</button>
+        <div class="abstract" id="abs-wp1" hidden><p>Using variation in the timing and intensity of abortion policy restrictions across states, I analyze whether individuals gestating under more restrictive abortion regimes experience lower educational attainment, weaker labor market outcomes, and poorer health later in life. The study connects to a growing literature on the intergenerational transmission of inequality, where early-life exposure to restrictive reproductive environments may deepen pre-existing disadvantages through reduced parental investments, altered fertility timing, and higher maternal stress. This paper highlights abortion policy as an important determinant of long-run human capital formation and economic mobility.</p></div>
+      </li>
+      <li class="paper">
+        <p class="paper-title">On the Rocks: Alcohol Access Shocks and Maternal and Child Health</p>
+        
+        <button class="abstract-toggle" onclick="toggleAbstract('abs-wp2')">Abstract</button>
+        <div class="abstract" id="abs-wp2" hidden><p>Using establishment-level data matched with restricted birth records from NVSS, I exploit within-county variation in liquor store openings and closings to identify causal effects on maternal and infant health. A net increase in alcohol retail establishments raises prenatal drinking and lowers birth weight, with effects more pronounced among women of color, rural counties, and Medicaid-insured mothers. Store openings increase adverse outcomes more than closures reverse them, consistent with persistent neighborhood exposure effects. These findings carry direct implications for local zoning, alcohol licensing policy, and maternal health equity.</p></div>
+      </li>
+      <li class="paper">
+        <p class="paper-title">Professional Recommendations and Provider Behavior</p>
+        <p class="paper-meta">With Lauren Hoehn-Velasco and Nancy A. Niemczyk</p>
+        <button class="abstract-toggle" onclick="toggleAbstract('abs-wp3')">Abstract</button>
+        <div class="abstract" id="abs-wp3" hidden><p>We examine how physicians respond to new RCT evidence, using the publication of the ARRIVE trial as a natural experiment. The trial found that elective induction at 39 weeks reduces cesarean delivery in low-risk, first-time pregnancies. Using nationally representative U.S. birth certificate data from 2016–2021, we document a rapid and sustained 9% increase in 39-week inductions for low-risk first births following the trial's release. Inductions also rise among subsequent births, suggesting off-label application of the findings. Despite this significant shift in clinical practice, we find no corresponding decline in cesarean sections. These results highlight a discrepancy between trial-based evidence and real-world outcomes, challenging the assumption that RCT findings necessarily translate into population-level improvements.</p></div>
+      </li>
+      <li class="paper">
+        <p class="paper-title">The Long-term Impact of In-Utero Alcohol Taxes on Adult Prenatal Drinking</p>
+        <p class="paper-meta">With Godwin Aipoh</p>
+        <button class="abstract-toggle" onclick="toggleAbstract('abs-wp4')">Abstract</button>
+        <div class="abstract" id="abs-wp4" hidden><p>We investigate whether in-utero exposure to alcohol tax policies shapes adult prenatal drinking and transmits health effects across generations. Using restricted birth certificate data with time and location fixed effects, we estimate the effect of historical alcohol tax rates during gestation on later-life prenatal alcohol use. Event studies further isolate long-run effects on adult health outcomes and intergenerational spillovers on infant health. Higher in-utero alcohol taxes significantly reduce adult prenatal drinking, offering evidence on the durability of early-life policy interventions and their reach across generations.</p></div>
+      </li>
+      <li class="paper">
+        <p class="paper-title">Neonatal Mortality Risk in Planned Home Birth, 2015–2024</p>
+        <p class="paper-meta">With Lauren Hoehn-Velasco and Diana R. Jolles &mdash; <em>Under Review</em></p>
+        
+      </li>
+      <li class="paper">
+        <p class="paper-title">Neonatal Mortality Risk in Freestanding Birth Centers, 2015–2024</p>
+        <p class="paper-meta">With Lauren Hoehn-Velasco and Diana R. Jolles &mdash; <em>Under Review</em></p>
+        
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div class="accordion" id="acc-work-in-progress">
+    <button class="accordion-header" onclick="toggleSection('work-in-progress')" aria-expanded="false">
+      <span class="toggle-icon">+</span>
+      <span>Work in Progress</span>
+    </button>
+    <div class="accordion-body" id="work-in-progress" hidden>
+      <ul class="paper-list">
+      
+      <li class="paper">
+        <p class="paper-title">Heat Waves, Fertility, and Labor Market Outcomes in the U.S.</p>
+        
+        
+      </li>
+      <li class="paper">
+        <p class="paper-title">Does Time Bridge Gaps? Long-Term Dynamics of the Child Penalty in Women's Earnings</p>
+        
+        
+      </li>
+      <li class="paper">
+        <p class="paper-title">State-Paid Leave and Healthcare Utilization for Infants</p>
+        <p class="paper-meta">With Godwin Aipoh</p>
+        
+      </li>
+      <li class="paper">
+        <p class="paper-title">Advertising and Consumer Behavior in the Post-Dobbs Era</p>
+        <p class="paper-meta">With Sukriti Beniwal and Nikita Dhingra</p>
+        
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div class="accordion" id="acc-research">
+    <button class="accordion-header" onclick="toggleSection('research')" aria-expanded="false">
+      <span class="toggle-icon">+</span>
+      <span>Research Interests</span>
+    </button>
+    <div class="accordion-body" id="research" hidden>
+      <ul class="interests-list">
+      <li><strong>Health Economics</strong> &mdash; maternal health, infant health, reproductive policy, healthcare utilization</li>
+      <li><strong>Labor Economics</strong> &mdash; labor market outcomes, child penalty, intergenerational mobility, fertility</li>
+      <li><strong>Public Policy</strong> &mdash; taxation, paid leave, alcohol and abortion policy, regulatory impacts</li>
+    </ul>
+    </div>
+  </div>
+  <div class="accordion" id="acc-teaching">
+    <button class="accordion-header" onclick="toggleSection('teaching')" aria-expanded="false">
+      <span class="toggle-icon">+</span>
+      <span>Teaching</span>
+    </button>
+    <div class="accordion-body" id="teaching" hidden>
+      
+    <h3>Instructor of Record</h3>
+    <ul class="teaching-list">
+      <li><strong>ECON 2106: Principles of Microeconomics</strong><br />Georgia State University, Spring 2025, Fall 2025</li>
+    </ul>
+    <h3>Teaching Assistant</h3>
+    <ul class="teaching-list">
+      <li><strong>ECON 8030: Mathematical Methods for Economists (PhD)</strong><br />Fall 2023, 2024, 2025</li>
+      <li><strong>ECON 4230: Experimental Economics</strong><br />Spring 2025, 2026</li>
+      <li><strong>ECON 3910: Microeconomics</strong><br />2024, 2025</li>
+    </ul>
+    </div>
+  </div>
+  <div class="accordion" id="acc-contact">
+    <button class="accordion-header" onclick="toggleSection('contact')" aria-expanded="false">
+      <span class="toggle-icon">+</span>
+      <span>Contact &amp; Bio</span>
+    </button>
+    <div class="accordion-body" id="contact" hidden>
+      
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <p><strong>Email:</strong> <a href="mailto:rdatta5@gsu.edu">rdatta5@gsu.edu</a></p>
+        <p><strong>Office:</strong><br />Department of Economics<br />Andrew Young School of Policy Studies<br />Georgia State University<br />Atlanta, GA 30303</p>
+        <p><a href="assets/Raka_CV.pdf">CV (PDF)</a> &nbsp;&middot;&nbsp; <a href="https://github.com/rakadatta/">GitHub</a> &nbsp;&middot;&nbsp; <a href="https://x.com/datta_raka">X / Twitter</a></p>
+      </div>
+      <div class="bio">
+        <h3>Short Bio</h3>
+        <p>Raka Datta is a PhD Candidate in Economics at the Andrew Young School of Policy Studies, Georgia State University, advised by Professor Lauren Hoehn-Velasco. Her research applies causal inference tools on large administrative and panel data to study questions in health and labor economics using applied microeconometric methods. She focuses on alcohol and abortion policy, provider behavior, and maternal and child health outcomes.</p>
+        <p>Prior to her PhD, she received an M.Sc. in Economics from the University of Bonn and worked as a Research Assistant at IZA - Institute of Labor Economics in Bonn, in the program <em>Gender, Growth and Labor Markets in Low Income Countries</em>.</p>
+      </div>
+    </div>
+    </div>
+  </div><!-- /prerender:sections --></div>
   </main>
 
-  <!-- SEO: key content surfaced for crawlers that don't execute JS -->
-  <div aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
-    <h1>Raka Datta</h1>
-    <p>PhD Candidate in Economics, Andrew Young School of Policy Studies, Georgia State University, Atlanta GA.</p>
-    <p>Research interests: health economics, labor economics, maternal health, infant health, reproductive policy, abortion policy, alcohol policy, provider behavior, intergenerational mobility, causal inference, applied microeconometrics.</p>
-    <p>Working papers: The Long-term Impact of In-Utero Restrictions to Abortion Access on Adult Labor Market Outcomes; On the Rocks: Alcohol Access Shocks and Maternal and Child Health; Professional Recommendations and Provider Behavior; The Long-term Impact of In-Utero Alcohol Taxes on Adult Prenatal Drinking; Neonatal Mortality Risk in Planned Home Birth; Neonatal Mortality Risk in Freestanding Birth Centers.</p>
-    <p>Contact: rdatta5@gsu.edu</p>
-  </div>
-
   <footer>
-    <p>&copy; <span id="year"></span> <span id="footer-name"></span></p>
+    <p>&copy; <span id="year">2026</span> <span id="footer-name">Raka Datta</span></p>
 
   </footer>
 

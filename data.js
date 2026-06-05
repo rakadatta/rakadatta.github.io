@@ -146,7 +146,8 @@ const DATA = {
     links: [
       { label: "CV (PDF)",       href: "assets/Raka_CV.pdf" },
       { label: "GitHub",         href: "https://github.com/rakadatta/" },
-      { label: "Google Scholar", href: "#" },
+      // Re-add Google Scholar here once the profile exists:
+      // { label: "Google Scholar", href: "https://scholar.google.com/citations?user=..." },
       { label: "X / Twitter",    href: "https://x.com/datta_raka" },
     ],
     bio: [

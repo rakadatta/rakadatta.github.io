@@ -28,7 +28,8 @@ function toggleAbstract(id) {
 function init() {
   const d = DATA;
 
-  document.title = d.name;
+  // Note: document.title is intentionally NOT set here — the static <title>
+  // in index.html carries the SEO-relevant "Name | Role | University" form.
   document.getElementById('site-name').textContent   = d.name;
   document.getElementById('footer-name').textContent = d.name;
   document.getElementById('year').textContent        = new Date().getFullYear();
