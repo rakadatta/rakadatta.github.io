@@ -49,6 +49,6 @@ console.log('index.html: static content regenerated');
 const sitemapPath = path.join(root, 'sitemap.xml');
 const today = new Date().toISOString().slice(0, 10);
 let sitemap = fs.readFileSync(sitemapPath, 'utf8');
-sitemap = sitemap.replace(/<lastmod>.*?<\/lastmod>/, `<lastmod>${today}</lastmod>`);
+sitemap = sitemap.replace(/<lastmod>.*?<\/lastmod>/g, `<lastmod>${today}</lastmod>`);
 fs.writeFileSync(sitemapPath, sitemap);
 console.log(`sitemap.xml: lastmod set to ${today}`);
