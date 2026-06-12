@@ -31,21 +31,9 @@ const DATA = {
   // ============================================================
   workingPapers: [
     {
-      title: "The Long-term Impact of In-Utero Restrictions to Abortion Access on Adult Labor Market Outcomes",
+      title: "Alcohol Access Shocks and Maternal and Child Health",
       href:  "#",
-      // meta:  "<em>/em> &mdash; Draft available upon request",
-      abstract:
-        "Using variation in the timing and intensity of abortion policy restrictions across states, " +
-        "I analyze whether individuals gestating under more restrictive abortion regimes experience " +
-        "lower educational attainment, weaker labor market outcomes, and poorer health later in life. " +
-        "The study connects to a growing literature on the intergenerational transmission of inequality, " +
-        "where early-life exposure to restrictive reproductive environments may deepen pre-existing " +
-        "disadvantages through reduced parental investments, altered fertility timing, and higher maternal stress. " +
-        "This paper highlights abortion policy as an important determinant of long-run human capital formation and economic mobility.",
-    },
-    {
-      title: "On the Rocks: Alcohol Access Shocks and Maternal and Child Health",
-      href:  "#",
+      meta:  "Draft available upon request",
       abstract:
         "Using establishment-level data matched with restricted birth records from NVSS, " +
         "I exploit within-county variation in liquor store openings and closings to identify causal effects on maternal and infant health. " +
@@ -67,6 +55,18 @@ const DATA = {
         "Despite this significant shift in clinical practice, we find no corresponding decline in cesarean sections. " +
         "These results highlight a discrepancy between trial-based evidence and real-world outcomes, " +
         "challenging the assumption that RCT findings necessarily translate into population-level improvements.",
+    },
+    {
+      title: "The Long-term Impact of In-Utero Restrictions to Abortion Access on Adult Labor Market Outcomes",
+      href:  "#",
+      abstract:
+        "Using variation in the timing and intensity of abortion policy restrictions across states, " +
+        "I analyze whether individuals gestating under more restrictive abortion regimes experience " +
+        "lower educational attainment, weaker labor market outcomes, and poorer health later in life. " +
+        "The study connects to a growing literature on the intergenerational transmission of inequality, " +
+        "where early-life exposure to restrictive reproductive environments may deepen pre-existing " +
+        "disadvantages through reduced parental investments, altered fertility timing, and higher maternal stress. " +
+        "This paper highlights abortion policy as an important determinant of long-run human capital formation and economic mobility.",
     },
     {
       title: "The Long-term Impact of In-Utero Alcohol Taxes on Adult Prenatal Drinking",
