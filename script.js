@@ -38,6 +38,7 @@ function init() {
   document.getElementById('cv-link').innerHTML  = renderCvLink(d.cvHref);
 
   document.getElementById('sections-container').innerHTML = [
+    renderAccordion('publications',   'Publications',       renderPaperList(d.publications, 'pub')),
     renderAccordion('working-papers', 'Working Papers',     renderPaperList(d.workingPapers, 'wp')),
     renderAccordion('work-in-progress', 'Work in Progress',  renderPaperList(d.workInProgress, 'wip')),
     renderAccordion('research',       'Research Interests', renderInterests(d.interests)),

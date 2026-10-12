@@ -96,8 +96,9 @@ function renderContact(contact) {
       <div class="contact-info">
         <h3>Contact</h3>
         <p><strong>Email:</strong> <a href="mailto:${esc(contact.email)}">${esc(contact.email)}</a></p>
+        ${contact.linkedin ? `<p><strong>LinkedIn:</strong> <a href="${esc(contact.linkedin)}">${esc(contact.linkedin.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))}</a></p>` : ''}
         <p><strong>Office:</strong><br />${officeLines}</p>
-        <p>${links}</p>
+        ${links ? `<p>${links}</p>` : ''}
       </div>
       <div class="bio">
         <h3>Short Bio</h3>

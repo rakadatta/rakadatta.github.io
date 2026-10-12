@@ -26,6 +26,7 @@ const blocks = {
   'hero': sandbox.renderHero(d),
   'cv-link': sandbox.renderCvLink(d.cvHref),
   'sections': [
+    sandbox.renderAccordion('publications',     'Publications',       sandbox.renderPaperList(d.publications, 'pub')),
     sandbox.renderAccordion('working-papers',   'Working Papers',     sandbox.renderPaperList(d.workingPapers, 'wp')),
     sandbox.renderAccordion('work-in-progress', 'Work in Progress',   sandbox.renderPaperList(d.workInProgress, 'wip')),
     sandbox.renderAccordion('research',         'Research Interests', sandbox.renderInterests(d.interests)),
