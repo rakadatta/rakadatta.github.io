@@ -78,14 +78,19 @@ const DATA = {
       href:  "#",
       meta:  `With <a href="https://www.laurenhoehnvelasco.com/">Lauren Hoehn-Velasco</a>, Elizabeth Humphreys, and Nancy A. Niemczyk`,
       abstract:
-        "We examine how physicians respond to new RCT evidence, using the publication of the ARRIVE trial " +
-        "as a natural experiment. The trial found that elective induction at 39 weeks reduces cesarean delivery " +
-        "in low-risk, first-time pregnancies. Using nationally representative U.S. birth certificate data from 2016–2021, " +
-        "we document a rapid and sustained 9% increase in 39-week inductions for low-risk first births following the trial's release. " +
-        "Inductions also rise among subsequent births, suggesting off-label application of the findings. " +
-        "Despite this significant shift in clinical practice, we find no corresponding decline in cesarean sections. " +
-        "These results highlight a discrepancy between trial-based evidence and real-world outcomes, " +
-        "challenging the assumption that RCT findings necessarily translate into population-level improvements.",
+        "Provider responses to updated clinical guidelines play a central role in shaping health outcomes. " +
+        "In this study, we examine how physicians respond to new randomized controlled trial (RCT) evidence. " +
+        "We analyze physician behavioral changes following the publication of the ARRIVE trial in obstetrics, " +
+        "which found that elective induction at 39 weeks can reduce cesarean delivery in low-risk, first-time pregnancies. " +
+        "Using nationally representative U.S. birth certificate data from 2016 to 2021, " +
+        "we document a rapid and sustained increase in 39-week inductions for low-risk first births by approximately 9%. " +
+        "Following the trial's release, inductions not only increase among first births but also among subsequent births, " +
+        "suggesting “off-label” application of the trial findings. " +
+        "Despite this significant shift in clinical practice, we find no corresponding decline in cesarean sections for first births. " +
+        "These findings highlight a significant discrepancy between trial-based findings and real-world application: " +
+        "while providers respond to high-quality clinical evidence, the anticipated downstream benefits may not surface. " +
+        "Our results highlight the importance of evaluating how evidence translates into practice " +
+        "and challenge the assumption that RCT findings necessarily imply population-level improvements.",
     },
     {
       title: "The Long-term Impact of In-Utero Alcohol Taxes on Adult Prenatal Drinking",
